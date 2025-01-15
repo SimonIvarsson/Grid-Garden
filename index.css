@@ -1,0 +1,63 @@
+body {
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(to right, #5ccb3d, #249305);
+}
+  
+#top-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+img {
+    width: 400px;
+    height: 250px;
+    display: block;
+}
+  
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+  
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+  
+.picture-1, .picture-2, .picture-3, .picture-4, .picture-5, .picture-6, .picture-7, .picture-8, .picture-9, .picture-10, .picture-11, .picture-12 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: padding 0.3s ease;
+}
+  
+.picture-1 img, .picture-2 img, .picture-3 img, .picture-4 img, .picture-5 img, .picture-6 img, .picture-7 img, .picture-8 img, .picture-9 img, .picture-10 img, .picture-11 img, .picture-12 img {
+    transition: transform 0.3s ease;
+}
+  
+.image-text {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+  
+.picture-1:hover .image-text, .picture-2:hover .image-text, .picture-3:hover .image-text, .picture-4:hover .image-text, .picture-5:hover .image-text, .picture-6:hover .image-text, .picture-7:hover .image-text, .picture-8:hover .image-text, .picture-9:hover .image-text, .picture-10:hover .image-text, .picture-11:hover .image-text, .picture-12:hover .image-text {
+    display: block;
+}
+  
+.picture-1:hover, .picture-2:hover, .picture-3:hover, .picture-4:hover, .picture-5:hover, .picture-6:hover, .picture-7:hover, .picture-8:hover, .picture-9:hover, .picture-10:hover, .picture-11:hover, .picture-12:hover {
+    padding-bottom: 20px
+}
+  
+.pictures img:hover {
+    transform: scale(1.1)
+}
